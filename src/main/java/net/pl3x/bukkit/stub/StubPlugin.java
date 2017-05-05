@@ -23,7 +23,7 @@ public class StubPlugin extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new StubListener(this), this);
 
-        getCommand("gptrades").setExecutor(new CmdStub(this));
+        getCommand("stub").setExecutor(new CmdStub(this));
 
         Logger.info(getName() + " v" + getDescription().getVersion() + " enabled!");
     }
