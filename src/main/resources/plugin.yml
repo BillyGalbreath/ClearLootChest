@@ -1,0 +1,19 @@
+name: ${project.artifactId}
+main: ${project.groupId}.${project.artifactId}
+version: ${project.version}
+description: ${project.artifactId} Bukkit Plugin
+author: BillyGalbreath
+softdepend:
+- WorldEdit
+
+commands:
+    stub:
+        description: Stub command
+        usage: /<command> (reload)
+        aliases:
+        - stubplugin
+
+permissions:
+    command.stub:
+        description: Allows reload configs
+        default: op
